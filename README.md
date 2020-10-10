@@ -28,7 +28,8 @@ The war file, included in the example directory is the Altoro Mutual (altoromutu
 
 # Run the Example:  
 Print the help and usage information
-```python SAST_Automation_Example.py -h 
+```
+python SAST_Automation_Example.py -h 
 usage: SAST_Automation_Example.py [-h] [-c CONFIG] [-s SCAN] [-t TARGET] credentials_file app
 
 positional arguments:
@@ -44,7 +45,8 @@ optional arguments:
   -t TARGET, --target TARGET
                         Directory to target for the scan. If not specified, the working directory is used.
 
-File format for credentials file: {"keyid": "<KEYID>", "keysecret": "<KEYSECRET">}```
+File format for credentials file: {"keyid": "<KEYID>", "keysecret": "<KEYSECRET">}
+```
 
 Run the example workflow  
 `py SAST_Automation_Example.py creds.json -c example/appscan-config.xml -s SAST_Scan -t example`
