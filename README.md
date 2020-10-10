@@ -19,8 +19,7 @@ Start with the example script SAST_Automation_Example.py. This script will step 
   6. Download the scan summary as a json file and print some info about the scan.
   7. Download the scan report to a desired location.
 
-By default, the example will not upload the irx file generated in step 1. It will upload the sample IRX file included in the example directory (demo.irx)
-This file will scan very quickly for demo purposes. In a real use case, delete or comment out the line that uses demo.irx instead of the real IRX file.
+To see some additional information in the stdout, set debug=True.
 
 The war file, included in the example directory is the Altoro Mutual (altoromutual.war). This is an application specifically designed to be scanned using HCL AppScan. It is publicly available at:  
 <https://github.com/hclproducts/AltoroJ>
@@ -29,7 +28,7 @@ The war file, included in the example directory is the Altoro Mutual (altoromutu
 # Run the Example:  
 Print the help and usage information
 ```
-python SAST_Automation_Example.py -h 
+python SAST_Automation_Example.py --help 
 usage: SAST_Automation_Example.py [-h] [-c CONFIG] [-s SCAN] [-t TARGET] credentials_file app
 
 positional arguments:
@@ -49,7 +48,7 @@ File format for credentials file: {"keyid": "<KEYID>", "keysecret": "<KEYSECRET"
 ```
 
 Run the example workflow  
-`py SAST_Automation_Example.py creds.json -c example/appscan-config.xml -s SAST_Scan -t example`
+`py SAST_Automation_Example.py example/example_creds.json -t example`
 
 # Helpful Links:  
 [HCL AppScan on Cloud Help Center](https://help.hcltechsw.com/appscan/ASoC/Welcome.html)  

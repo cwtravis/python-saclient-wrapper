@@ -83,7 +83,7 @@ else:
 print()
 
 appidentifier = args.app
-debug = True
+debug = False
 saclient = SAClient.SAClient(api_key["keyid"], api_key["keysecret"], False, debug)
 
 # Step 1: Login to ASoC
